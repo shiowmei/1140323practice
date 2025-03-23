@@ -1,0 +1,12 @@
+name: run a0323-1
+on:
+  push:
+jobs:
+  build:
+    name: run python build
+    runs-on: ubuntu-latest
+    steps: 
+    - uses: action/checkout@v2
+    - name: Run python
+    run:  
+      python3 a0323-1.py
